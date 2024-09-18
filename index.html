@@ -4,99 +4,138 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currículum Vitae - Bernardo A. González Erramuspe</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <style>
       body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 20px;
-        background-color: #f4f4f4;
+        background-color: #f8f9fa;
       }
       .container {
-        max-width: 900px;
-        margin: 0 auto;
-        background-color: #fff;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .profile-picture {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
       }
       h1,
       h2 {
-        color: #333;
+        color: #343a40;
       }
       h1 {
         text-align: center;
+        margin-bottom: 20px;
       }
-      ul {
-        list-style-type: none;
+      .contact-info ul {
         padding: 0;
+        list-style-type: none;
       }
-      ul li {
+      .contact-info li {
         margin-bottom: 10px;
       }
-      .section {
-        margin-bottom: 40px;
-      }
       .contact-info a {
+        color: #0d6efd;
         text-decoration: none;
-        color: #0066cc;
       }
       .contact-info a:hover {
         text-decoration: underline;
       }
-      .skills ul,
-      .education ul,
-      .references ul {
-        padding-left: 20px;
+      .section {
+        margin-bottom: 40px;
+      }
+      .social-icons a {
+        margin-right: 15px;
+        color: #0d6efd;
+        font-size: 1.5em;
+      }
+      .social-icons a:hover {
+        color: #0056b3;
+      }
+      a {
+        color: inherit; /* Para heredar el color del texto circundante */
+        text-decoration: none; /* Para quitar el subrayado */
+      }
+
+      a:hover {
+        color: #0056b3; /* Color personalizado cuando el enlace se pasa por encima */
+        text-decoration: underline; /* Opcional: subrayado solo al hacer hover */
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Bernardo A. González Erramuspe</h1>
+      <div class="text-center">
+        <img
+          src="img/foto-perfil.jpeg"
+          alt="Foto de Bernardo"
+          class="profile-picture"
+        />
+        <h1>Bernardo A. González Erramuspe</h1>
+        <div class="social-icons">
+          <a href="https://github.com/Bernard2806" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/bernardo-gonzalez-erramuspe/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
 
       <div class="section contact-info">
-        <h2>Datos Personales</h2>
-        <ul>
+        <h2><i class="fas fa-address-card"></i> Datos Personales</h2>
+        <ul class="list-unstyled">
           <li><strong>Ubicación:</strong> Buenos Aires, Chivilcoy</li>
           <li>
             <strong>Teléfono:</strong>
-            <a href="tel:+542346614492">+54 2346 614492</a>
+            <a href="tel:+542346614492"
+              ><i class="fas fa-phone"></i> +54 2346 614492</a
+            >
           </li>
           <li>
             <strong>Email:</strong>
             <a href="mailto:bgonzalezerramuspe2006@hotmail.com"
-              >bgonzalezerramuspe2006@hotmail.com</a
-            >
-          </li>
-          <li>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/Bernard2806" target="_blank"
-              >Bernard2806</a
-            >
-          </li>
-          <li>
-            <strong>LinkedIn:</strong>
-            <a
-              href="https://www.linkedin.com/in/bernardo-gonzalez-erramuspe/"
-              target="_blank"
-              >bernardo-gonzalez-erramuspe</a
+              ><i class="fas fa-envelope"></i>
+              bgonzalezerramuspe2006@hotmail.com</a
             >
           </li>
         </ul>
       </div>
 
       <div class="section education">
-        <h2>Educación</h2>
+        <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
         <ul>
           <li>
-            <strong>Técnico en Informática</strong> - Escuela Secundaria Técnica
-            N°1 "Mariano Moreno", Chivilcoy
+            <strong>Técnico en Informática Profesional y Personal</strong> -
+            Escuela Secundaria Técnica N°1 "Mariano Moreno", Chivilcoy [En
+            curso]
           </li>
-          <li>[En curso] Finalización estimada: Diciembre 2024</li>
+          Finalización estimada: Diciembre 2024
         </ul>
       </div>
 
       <div class="section professional-experience">
-        <h2>Desarrollo Académico y Profesional</h2>
+        <h2>
+          <i class="fas fa-briefcase"></i> Desarrollo Académico y Profesional
+        </h2>
         <ul>
           <li>
             <strong>Práctica Profesionalizante en Desarrollo Web</strong> -
@@ -126,7 +165,7 @@
       </div>
 
       <div class="section skills">
-        <h2>Habilidades</h2>
+        <h2><i class="fas fa-cogs"></i> Habilidades</h2>
         <ul>
           <li>Manejo de Office (Word, Excel, PowerPoint) - Intermedio</li>
           <li>Redes (configuración de AP y routers)</li>
@@ -137,24 +176,28 @@
       </div>
 
       <div class="section references">
-        <h2>Referencias</h2>
+        <h2><i class="fas fa-user-tie"></i> Referencias</h2>
         <ul>
           <li>
             <strong>José Luis Orihuela Conde</strong> - Profesor a Cargo de la
             Pasantía<br />
-            <a href="tel:+5492346653531">+54 9 2346 65-3531</a>
+            <a href="tel:+5492346653531"
+              ><i class="fas fa-phone"></i> +54 9 2346 65-3531</a
+            >
           </li>
 
           <li>
             <strong>Sergio Caffaro</strong> - Profesor del Proyecto de Reserva
             de Salones<br />
-            <a href="tel:+5492346525516">+54 9 2346 525516</a>
+            <a href="tel:+5492346525516"
+              ><i class="fas fa-phone"></i> +54 9 2346 525516</a
+            >
           </li>
         </ul>
       </div>
 
       <div class="section about-me">
-        <h2>Sobre Mi</h2>
+        <h2><i class="fas fa-info-circle"></i> Sobre Mi</h2>
         <p>
           Soy un estudiante de la Escuela Secundaria Técnica N1 "Mariano Moreno"
           con una sólida formación en desarrollo web, gestión de bases de datos
@@ -164,5 +207,8 @@
         </p>
       </div>
     </div>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
